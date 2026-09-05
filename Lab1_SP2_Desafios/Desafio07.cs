@@ -30,11 +30,13 @@ namespace Lab1_SP2_Desafios
 
         private void cmdConfirmar_Click(object sender, EventArgs e)
         {
+            GroupBox groupBoxTurno = new GroupBox();
             string turno = "(ninguno)";
             if (optManana.Checked) { turno = "Manana"; }
             if (optTarde.Checked) { turno = "Tarde"; }
             if (optNoche.Checked) { turno = "Noche"; }
 
+            GroupBox groupBoxModalidad = new GroupBox();
             string modalidad = "(ninguna)";
             if (optPresencial.Checked) { modalidad = "Presencial"; }
             if (optVirtual.Checked) { modalidad = "Virtual"; }

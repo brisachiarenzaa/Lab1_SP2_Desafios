@@ -50,5 +50,10 @@ namespace Lab1_SP2_Desafios
         {
 
         }
+
+        private void Desafio06_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

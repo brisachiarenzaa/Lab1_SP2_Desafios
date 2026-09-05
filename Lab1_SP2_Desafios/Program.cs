@@ -10,7 +10,7 @@ namespace Lab1_SP2_Desafios
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Desafio07());
+            Application.Run(new Desafio10());
         }
     }
 }

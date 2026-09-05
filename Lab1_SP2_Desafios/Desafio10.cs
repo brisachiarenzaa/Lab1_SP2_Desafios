@@ -46,5 +46,10 @@ namespace Lab1_SP2_Desafios
         {
             this.Close();
         }
+
+        private void Desafio10_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

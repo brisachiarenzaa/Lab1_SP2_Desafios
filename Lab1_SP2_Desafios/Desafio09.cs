@@ -16,6 +16,7 @@
 //  usuario en lugar de romperse.
 // =====================================================================
 using System;
+using System.Collections;
 using System.Windows.Forms;
 
 namespace Lab1_SP2_Desafios
@@ -29,6 +30,14 @@ namespace Lab1_SP2_Desafios
 
         private void Desafio09_Load(object sender, EventArgs e)
         {
+            cboCiudad.Items.Add("Rosario");
+            cboCiudad.Items.Add("Cordoba");
+            cboCiudad.Items.Add("Mendoza");
+            cboCiudad.Items.Add("Bahia Blanca");
+            cboCiudad.Items.Add("Salta");
+
+            cboCiudad.Sorted = true;
+
             // TODO 1: agregar estas ciudades al cuadro combinado:
             //         Rosario, Cordoba, Mendoza, Bahia Blanca, Salta
             //         Ayuda: cboCiudad.Items.Add("...");
@@ -38,7 +47,17 @@ namespace Lab1_SP2_Desafios
 
         private void cmdMostrar_Click(object sender, EventArgs e)
         {
+            if (cboCiudad.SelectedIndex == -1)
+            {
+                MessageBox.Show("No seleccionó ninguna ciudad, vuelva a intentarlo.");
+            }
             lblResultado.Text = "Elegiste: " + cboCiudad.SelectedItem.ToString();
+        }
+
+        private void cboCiudad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+
         }
     }
 }
