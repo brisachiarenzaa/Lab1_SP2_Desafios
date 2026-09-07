@@ -1,4 +1,4 @@
-﻿namespace Lab1_SP2_Desafios
+﻿ namespace Lab1_SP2_Desafios
 {
     partial class Desafio10
     {
