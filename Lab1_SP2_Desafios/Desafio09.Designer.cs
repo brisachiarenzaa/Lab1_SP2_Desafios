@@ -25,10 +25,9 @@
             // lblCiudad
             // 
             this.lblCiudad.AutoSize = true;
-            this.lblCiudad.Location = new System.Drawing.Point(33, 41);
-            this.lblCiudad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCiudad.Location = new System.Drawing.Point(25, 33);
             this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(53, 16);
+            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
             this.lblCiudad.TabIndex = 3;
             this.lblCiudad.Text = "Ciudad:";
             // 
@@ -36,19 +35,17 @@
             // 
             this.cboCiudad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCiudad.FormattingEnabled = true;
-            this.cboCiudad.Location = new System.Drawing.Point(127, 37);
-            this.cboCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCiudad.Location = new System.Drawing.Point(95, 30);
             this.cboCiudad.Name = "cboCiudad";
-            this.cboCiudad.Size = new System.Drawing.Size(292, 24);
+            this.cboCiudad.Size = new System.Drawing.Size(220, 21);
             this.cboCiudad.TabIndex = 2;
             this.cboCiudad.SelectedIndexChanged += new System.EventHandler(this.cboCiudad_SelectedIndexChanged);
             // 
             // cmdMostrar
             // 
-            this.cmdMostrar.Location = new System.Drawing.Point(127, 86);
-            this.cmdMostrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmdMostrar.Location = new System.Drawing.Point(95, 70);
             this.cmdMostrar.Name = "cmdMostrar";
-            this.cmdMostrar.Size = new System.Drawing.Size(160, 37);
+            this.cmdMostrar.Size = new System.Drawing.Size(120, 30);
             this.cmdMostrar.TabIndex = 1;
             this.cmdMostrar.Text = "Mostrar seleccion";
             this.cmdMostrar.UseVisualStyleBackColor = true;
@@ -56,23 +53,22 @@
             // 
             // lblResultado
             // 
-            this.lblResultado.Location = new System.Drawing.Point(33, 148);
-            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultado.Location = new System.Drawing.Point(25, 120);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(533, 31);
+            this.lblResultado.Size = new System.Drawing.Size(400, 25);
             this.lblResultado.TabIndex = 0;
+            this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // Desafio09
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 203);
+            this.ClientSize = new System.Drawing.Size(450, 165);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.cmdMostrar);
             this.Controls.Add(this.cboCiudad);
             this.Controls.Add(this.lblCiudad);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Desafio09";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

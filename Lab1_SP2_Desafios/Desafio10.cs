@@ -31,13 +31,20 @@ namespace Lab1_SP2_Desafios
         }
 
         private void txtLegajo_KeyPress(object sender, KeyPressEventArgs e)
+         
         {
+           if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            
+             {
+                e.Handled = true;
+            }
             // TODO A: rechazar toda tecla que no sea un digito.
             //         La tecla de retroceso tiene que seguir funcionando.
         }
 
         private void mnuGuardarComo_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Legajo a guardar:" + txtLegajo.Text);
             // TODO C: mostrar un MessageBox con el texto
             //         "Legajo a guardar: <contenido de txtLegajo>"
         }
@@ -48,6 +55,11 @@ namespace Lab1_SP2_Desafios
         }
 
         private void Desafio10_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mnuPrincipal_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

@@ -28,25 +28,42 @@ namespace Lab1_SP2_Desafios
 
         private void chkCobertura_CheckStateChanged(object sender, EventArgs e)
         {
+            lblEstado.Text = "Cobertura: SI";
+            lblEstado.Text = "Cobertura: NO";
+            lblEstado.Text = "Cobertura: sin definir";
+
             switch (chkCobertura.CheckState)
             {
                 // TODO 1: caso activada  -> lblEstado.Text = "Cobertura: SI";
-                case CheckState.Checked:
-                    lblEstado.Text = "Cobertura: SI";
-                    break;
                 // TODO 2: caso desactivada -> lblEstado.Text = "Cobertura: NO";
-                case CheckState.Unchecked:
-                    lblEstado.Text = "Cobertura: NO";
-                    break;
                 // TODO 3: caso indeterminado -> lblEstado.Text = "Cobertura: sin definir";
 
-                default:
-                    lblEstado.Text = "Cobertura: sin definir";
-                    break;  
+                case CheckState.Checked :
+                    lblEstado.Text = "Cobertura: SI";
+                    break;
+
+                case CheckState.Indeterminate:
+                    lblEstado.Text = "Cobertura: NO";
+                    break;
+                case CheckState.Unchecked:
+                 lblEstado.Text = "Cobertura: Sin definir";
+                    break;
+            default:
+                   lblEstado.Text = "(Sin resolver)";
+                break;
             }
         }
-
         private void lblInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Desafio08_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkCobertura_CheckedChanged(object sender, EventArgs e)
         {
 
         }

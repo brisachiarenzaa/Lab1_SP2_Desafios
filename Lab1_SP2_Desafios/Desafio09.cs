@@ -51,12 +51,18 @@ namespace Lab1_SP2_Desafios
             {
                 MessageBox.Show("No seleccionó ninguna ciudad, vuelva a intentarlo.");
             }
+            else 
             lblResultado.Text = "Elegiste: " + cboCiudad.SelectedItem.ToString();
         }
 
         private void cboCiudad_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+           
+
+        }
+
+        private void lblResultado_Click(object sender, EventArgs e)
+        {
 
         }
     }

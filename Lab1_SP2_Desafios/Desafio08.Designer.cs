@@ -23,31 +23,29 @@
             // chkCobertura
             // 
             this.chkCobertura.AutoSize = true;
-            this.chkCobertura.Location = new System.Drawing.Point(40, 98);
-            this.chkCobertura.Margin = new System.Windows.Forms.Padding(4);
+            this.chkCobertura.Location = new System.Drawing.Point(30, 80);
             this.chkCobertura.Name = "chkCobertura";
-            this.chkCobertura.Size = new System.Drawing.Size(170, 20);
+            this.chkCobertura.Size = new System.Drawing.Size(136, 17);
             this.chkCobertura.TabIndex = 1;
             this.chkCobertura.Text = "Cobertura odontologica";
             this.chkCobertura.ThreeState = true;
             this.chkCobertura.UseVisualStyleBackColor = true;
+            this.chkCobertura.CheckedChanged += new System.EventHandler(this.chkCobertura_CheckedChanged);
             this.chkCobertura.CheckStateChanged += new System.EventHandler(this.chkCobertura_CheckStateChanged);
             // 
             // lblEstado
             // 
             this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblEstado.Location = new System.Drawing.Point(40, 148);
-            this.lblEstado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEstado.Location = new System.Drawing.Point(30, 120);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(527, 37);
+            this.lblEstado.Size = new System.Drawing.Size(395, 30);
             this.lblEstado.TabIndex = 0;
             // 
             // lblInfo
             // 
-            this.lblInfo.Location = new System.Drawing.Point(33, 25);
-            this.lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInfo.Location = new System.Drawing.Point(25, 20);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(533, 55);
+            this.lblInfo.Size = new System.Drawing.Size(400, 45);
             this.lblInfo.TabIndex = 2;
             this.lblInfo.Text = "Hace clic varias veces sobre la casilla: tiene que pasar por tres estados distint" +
     "os.";
@@ -55,18 +53,18 @@
             // 
             // Desafio08
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 215);
+            this.ClientSize = new System.Drawing.Size(450, 175);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.chkCobertura);
             this.Controls.Add(this.lblInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Desafio08";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Desafio 08 - Casilla triestable";
+            this.Load += new System.EventHandler(this.Desafio08_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
